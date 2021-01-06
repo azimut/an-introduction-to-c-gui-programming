@@ -5,6 +5,8 @@ LDFLAGS=`pkg-config --libs $(PKGS)` -lm
 14helloworld:
 15button:
 15signals:
+16boxnlabels:
+16updatelabel:
 
 .PHONY: clear
 clear:
