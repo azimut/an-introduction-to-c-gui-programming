@@ -4,7 +4,7 @@ GtkWidget *txt;
 
 void end_program(GtkWidget *wid, gpointer ptr) { gtk_main_quit(); }
 
-void copy_text(GtkWidget *wid, gpointer ptr){
+void copy_text(GtkWidget *wid, gpointer ptr) {
   const char *input = gtk_entry_get_text(GTK_ENTRY(txt));
   gtk_label_set_text(GTK_LABEL(ptr), input);
 }
@@ -22,9 +22,9 @@ int main(int argc, char *argv[]) {
   g_signal_connect(cpy, "clicked", G_CALLBACK(copy_text), lbl);
 
   // default, min, max, step, page increments
-  GtkObject *adj = gtk_adjustment_new(0,-10,10,1,0,0);
+  GtkObject *adj = gtk_adjustment_new(0, -10, 10, 1, 0, 0);
   // climb rate, number of decimals to show
-  txt = gtk_spin_button_new(GTK_ADJUSTMENT(adj),0,0);
+  txt = gtk_spin_button_new(GTK_ADJUSTMENT(adj), 0, 0);
 
   GtkWidget *tbl = gtk_table_new(2, 2, TRUE);
   // left, right, top, bottom

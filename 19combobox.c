@@ -9,6 +9,7 @@ void combo_changed(GtkWidget *wid, gpointer ptr) {
 }
 
 int main(int argc, char *argv[]) {
+
   gtk_init(&argc, &argv);
 
   GtkWidget *win = gtk_window_new(GTK_WINDOW_TOPLEVEL);
@@ -19,6 +20,7 @@ int main(int argc, char *argv[]) {
 
   // Toggle button
   GtkWidget *comb = gtk_combo_box_text_new();
+
   gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(comb), "Option 1");
   gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(comb), "Option 2");
   gtk_combo_box_text_append_text(GTK_COMBO_BOX_TEXT(comb), "Option 3");

@@ -6,7 +6,7 @@ int count = 0;
 
 void end_program(GtkWidget *wid, gpointer ptr) { gtk_main_quit(); }
 
-void count_button(GtkWidget *wid, gpointer ptr){
+void count_button(GtkWidget *wid, gpointer ptr) {
   char buffer[30];
   count++;
   sprintf(buffer, "Button pressed %d times", count);
@@ -29,9 +29,9 @@ int main(int argc, char *argv[]) {
 
   // Expand, Fill, Padding
   gtk_box_pack_start(GTK_BOX(box), btn2, FALSE, FALSE, 0);
-  gtk_box_pack_start(GTK_BOX(box), lbl,  FALSE, FALSE, 0);
-  gtk_box_pack_start(GTK_BOX(hbox), box,  TRUE, TRUE, 0);
-  gtk_box_pack_start(GTK_BOX(hbox), btn,  FALSE, FALSE, 0);
+  gtk_box_pack_start(GTK_BOX(box), lbl, FALSE, FALSE, 0);
+  gtk_box_pack_start(GTK_BOX(hbox), box, TRUE, TRUE, 0);
+  gtk_box_pack_start(GTK_BOX(hbox), btn, FALSE, FALSE, 0);
 
   gtk_container_add(GTK_CONTAINER(win), hbox);
 
