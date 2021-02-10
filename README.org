@@ -1,1 +1,1 @@
-Learning from "An introduction to C GUI Programming".
+Code from "An introduction to C & GUI Programming" by Simon Long
