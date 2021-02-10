@@ -1,5 +1,19 @@
 compile_commands.json
 
+14helloworld
+15button
+15signals
+16boxnlabels
+16updatelabel
+17expandfill
+17tables
+18check
+18radio
+18spin
+18text
+19combobox
+19liststores
+
 # Created by https://www.toptal.com/developers/gitignore/api/c
 # Edit at https://www.toptal.com/developers/gitignore?templates=c
 
